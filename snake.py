@@ -100,7 +100,7 @@ def check_collisions(snake):
 
     if x < 0 or x > GAME_WIDTH:
         return True
-    elif y < 0 or x > GAME_HEIGHT:
+    elif y < 0 or y > GAME_HEIGHT:
         return True
 
     for body_part in snake.coordinates[1:]:
